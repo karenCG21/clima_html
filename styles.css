@@ -36,8 +36,43 @@ margin: 0 auto;
         align-items: center;
         gap: 4rem;
         margin-top: 5rem;
-        
+
     }
+}
+.form, .field {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+margin-bottom: 2rem;
+
+}
+.form input[type= 'text'],
+.form select {
+    padding: 1rem;
+    background-color: transparent;
+    border: 0.3rem solid var(--while);
+    color:var(--while);
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 1rem;
+
+}
+
+.field ::placeholder {
+    color: var(--while);
+
+}
+
+.submit {
+    background-color: var(--primary);
+    border: none;
+    color: var(--while);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1rem;
+    
 }
 
 
