@@ -11,9 +11,41 @@
     <h1 class="title">Buscador de clima</h1>
     <div class="container">
     <form class="form" method="post">
+        <div class="field">
+            <label for="city">Cuidad</label>
+            <input
+            id="city"
+            name="city"
+            type="text"
+            placeholder="Cuidad"
+            
+            />
+        </div>
+        <div class="field">
+            <label for="country">Pais</label>
+            <select id="country" name="country">
+             <option value="">-- Seleccione un pais</option>
+             <option value="">Estados Unidos</option>
+             <option value="">Mexico</option>
+             <option value="">Colombia</option>
+             <option value="">España</option>
+
+            </select>
+
+        </div>
+
+       <input class="submit" type="submit" value="Consultar Clima"/>
 
     </form>
-
+     
+    <div class="weather-card">
+        <h2>Clima de Cuidad de Ejemplo</h2>
+        <p class="current">25°C</p>
+        <div class="temperatures">
+            <p>Min: <span>18°C</span></p>
+            <p>Max: <span>28°C</span></p>
+        </div>
+    </div>
     </div>
 
 </body>
